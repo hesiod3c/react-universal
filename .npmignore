@@ -1,0 +1,9 @@
+__tests__
+android
+ios
+storybook
+.buckconfig
+.flowconfig
+.watchmanconfig
+App.js
+app.json
