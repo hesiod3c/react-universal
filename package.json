@@ -6,8 +6,8 @@
 				"release": "release-it",
 				"android": "react-native run-android",
 				"ios": "react-native run-ios",
-				"storybook:native": "storybook start -p 9000 -c ./storybook",
-				"storybook:web": "start-storybook -p 9001 -c ./.storybook",
+				"storybook:native": "storybook start -p 9000 -c ./internals/storybook/native",
+				"storybook:web": "start-storybook -p 9001 -c ./internals/storybook/web",
 				"test": "jest",
 				"prestorybook:native": "rnstl",
 				"lint": "eslint source"
