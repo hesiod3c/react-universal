@@ -68,7 +68,7 @@ class Button extends PureComponent {
     loading: PropTypes.bool,
     type: PropTypes.oneOf(['button', 'reset', 'submit']),
     style: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger', 'transparent']),
-    size: PropTypes.oneOf(['mini', 'small','medium', 'large', 'none']),
+    size: PropTypes.oneOf(['mini', 'small', 'medium', 'large', 'none']),
     onClick: PropTypes.func,
     children: PropTypes.any.isRequired,
     className: PropTypes.string,
