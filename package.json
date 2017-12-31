@@ -27,6 +27,7 @@
     "react-native-svg": "5.4.2"
   },
   "devDependencies": {
+    "@descco/ui-core": "^0.2.0",
     "@storybook/addon-actions": "3.3.3",
     "@storybook/addon-events": "3.3.3",
     "@storybook/addon-info": "3.3.3",
