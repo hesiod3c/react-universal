@@ -21,33 +21,4 @@ storiesOf('Button', module)
         <Text>Texto</Text>
       </Button>
     </View>
-  ))
-  .add('Secundary', () => (
-    <View>
-      <Button onPress={action('clicked-text')} styleType='secundary'>
-        <Text>Texto</Text>
-      </Button>
-      <Button onPress={action('clicked-text')} size='large' styleType='secundary'>
-        <Text>Texto</Text>
-      </Button>
-      <Button onPress={action('clicked-text')} block={false} styleType='secundary'>
-        <Text>Texto</Text>
-      </Button>
-    </View>
-  ))
-  .add('Loading', () => (
-    <View>
-      <Button onPress={action('clicked-text')} loading={true}>
-        <Text>Texto</Text>
-      </Button>
-      <Button onPress={action('clicked-text')} styleType='secundary' loading={true}>
-        <Text>Texto</Text>
-      </Button>
-      <Button onPress={action('clicked-text')} size='large' loading={true}>
-        <Text>Texto</Text>
-      </Button>
-      <Button onPress={action('clicked-text')} block={false} loading={true}>
-        <Text>Texto</Text>
-      </Button>
-    </View>
   ));
