@@ -5,7 +5,7 @@ import { loadStories } from './story-loader';
 
 // import stories
 configure(() => {
-  require('./welcome/welcome.story');
+  require('../ui/welcome/welcome.story');
   loadStories()
 }, module);
 

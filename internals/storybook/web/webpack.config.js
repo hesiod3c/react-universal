@@ -1,5 +1,5 @@
 const storybookWebpackConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
-const webpackConfig = require('../webpack/webpack.dev.config.js');
+const webpackConfig = require('../../webpack/webpack.dev.config.js');
 
 module.exports = function (config, env) {
   const newConfig = storybookWebpackConfig(config, env);
