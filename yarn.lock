@@ -32,6 +32,16 @@
     react-inspector "^2.2.1"
     uuid "^3.1.0"
 
+"@storybook/addon-events@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-events/-/addon-events-3.3.3.tgz#0bf7f3186ed40f18c66555983885251e9aafb0bc"
+  dependencies:
+    babel-runtime "^6.26.0"
+    format-json "^1.0.3"
+    prop-types "^15.6.0"
+    react-textarea-autosize "^5.2.1"
+    uuid "^3.1.0"
+
 "@storybook/addon-info@3.3.3":
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.3.3.tgz#87f9375dcd74a752bf84eef8798f31a3636f644a"
@@ -4117,6 +4127,10 @@ form-data@~2.3.1:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
+
+format-json@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/format-json/-/format-json-1.0.3.tgz#268e3d3e169792ff49bb5b030f22c87ca1c2cd9f"
 
 forwarded@~0.1.2:
   version "0.1.2"

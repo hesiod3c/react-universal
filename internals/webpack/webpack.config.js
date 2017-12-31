@@ -13,7 +13,7 @@ const options = yargs
 
 const baseConfig = {
   entry: {
-    'ui-react': './source/index.js',
+    'ui-react': './source/index.web.js',
   },
 
   output: {
@@ -41,7 +41,7 @@ const baseConfig = {
       {
         enforce: 'pre',
         test: /\.web.js$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules| )/,
         use: {
           loader: 'eslint-loader'
         }

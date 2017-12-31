@@ -12,7 +12,7 @@ const options = yargs
 
 const baseConfig = {
   entry: {
-    'ui-react': './source/index.js',
+    'ui-react': './source/index.web.js',
   },
 
   output: {
@@ -32,21 +32,21 @@ const baseConfig = {
   ],
 
   resolve: {
-    extensions: ['.js', '.jsx', '.scss']
+    extensions: ['.web.js', '.js', '.jsx', '.scss']
   },
 
   module: {
     rules: [
       {
         enforce: 'pre',
-        test: /\.js$/,
+        test: /\.web.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'eslint-loader'
         }
       },
       {
-        test: /\.js$/,
+        test: /\.web.js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
