@@ -1,1 +1,5 @@
 **/*.story.js
+internals
+ios
+android
+node_modules
