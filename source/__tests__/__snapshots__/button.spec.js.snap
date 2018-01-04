@@ -963,7 +963,7 @@ ShallowWrapper {
     block={true}
     rounded={true}
     size="normal"
-    styleType="secundary"
+    styleType="secondary"
   >
     Text
   </Button>,

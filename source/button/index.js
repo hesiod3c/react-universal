@@ -84,7 +84,7 @@ const styles = {
       backgroundColor: '#40cd28',
     },
   },
-  secundary: {
+  secondary: {
     button: {
       backgroundColor: '#33bdf2',
     },

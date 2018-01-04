@@ -10,7 +10,7 @@ describe('Button', function() {
     });
 
     it('exibe o botão secundário', () => {
-      const component = shallow(<Button styleType="secundary">Text</Button>);
+      const component = shallow(<Button styleType="secondary">Text</Button>);
       expect(component).toMatchSnapshot();
     });
 
