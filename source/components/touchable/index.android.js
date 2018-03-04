@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { TouchableNativeFeedback, TouchableOpacity, View } from 'react-native';
 
 const canUseRipple = TouchableNativeFeedback.canUseNativeForeground();
 
-class Touchable extends React.Component {
+class Touchable extends Component {
   onPress() {
     const { onPress } = this.props;
     setTimeout(onPress, 50);

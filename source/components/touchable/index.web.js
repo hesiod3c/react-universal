@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class Touchable extends React.Component {
+export default class Touchable extends Component {
   onPress() {
     const { onPress } = this.props;
     setTimeout(onPress, 200);

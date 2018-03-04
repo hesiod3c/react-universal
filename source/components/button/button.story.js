@@ -3,7 +3,7 @@ import { storiesOf } from '../../../internals/storybook/helpers';
 import { action } from '@storybook/addon-actions';
 
 import { Text, View } from 'react-native';
-import Button from './index';
+import Button from '../button';
 
 storiesOf('Button', module)
   .add('Primary', () => (

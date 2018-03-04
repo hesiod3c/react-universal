@@ -1,7 +1,7 @@
-import React, { Children } from 'react';
+import React, { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 
-class ThemeProvider extends React.Component {
+class ThemeProvider extends Component {
   getChildContext() {
     return {
       theme: this.props.theme,

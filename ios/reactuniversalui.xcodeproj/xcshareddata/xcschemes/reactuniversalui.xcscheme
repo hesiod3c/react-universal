@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "reactuniversal.app"
-               BlueprintName = "reactuniversal"
-               ReferencedContainer = "container:reactuniversal.xcodeproj">
+               BuildableName = "reactuniversalui.app"
+               BlueprintName = "reactuniversalui"
+               ReferencedContainer = "container:reactuniversalui.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactuniversalTests.xctest"
-               BlueprintName = "reactuniversalTests"
-               ReferencedContainer = "container:reactuniversal.xcodeproj">
+               BuildableName = "reactuniversaluiTests.xctest"
+               BlueprintName = "reactuniversaluiTests"
+               ReferencedContainer = "container:reactuniversalui.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactuniversalTests.xctest"
-               BlueprintName = "reactuniversalTests"
-               ReferencedContainer = "container:reactuniversal.xcodeproj">
+               BuildableName = "reactuniversaluiTests.xctest"
+               BlueprintName = "reactuniversaluiTests"
+               ReferencedContainer = "container:reactuniversalui.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactuniversal.app"
-            BlueprintName = "reactuniversal"
-            ReferencedContainer = "container:reactuniversal.xcodeproj">
+            BuildableName = "reactuniversalui.app"
+            BlueprintName = "reactuniversalui"
+            ReferencedContainer = "container:reactuniversalui.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactuniversal.app"
-            BlueprintName = "reactuniversal"
-            ReferencedContainer = "container:reactuniversal.xcodeproj">
+            BuildableName = "reactuniversalui.app"
+            BlueprintName = "reactuniversalui"
+            ReferencedContainer = "container:reactuniversalui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactuniversal.app"
-            BlueprintName = "reactuniversal"
-            ReferencedContainer = "container:reactuniversal.xcodeproj">
+            BuildableName = "reactuniversalui.app"
+            BlueprintName = "reactuniversalui"
+            ReferencedContainer = "container:reactuniversalui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

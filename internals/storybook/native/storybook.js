@@ -1,15 +1,16 @@
+import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { getStorybookUI, configure, addDecorator } from '@storybook/react-native';
 import { setOptions } from '@storybook/addon-options';
 import { loadStories } from './story-loader';
-import ThemeProvider from '../../src/components/theme-provider';
-import CenterView from '../native/centerview';
+import ThemeProvider from '../../../source/components/theme-provider';
+import CenterView from './ui/centerview';
 
 addDecorator((fn, { kind, story }) => <ThemeProvider theme={{}}><CenterView>{fn()}</CenterView></ThemeProvider>);
 
 // import stories
 configure(() => {
-  require('../ui/welcome/welcome.story');
+  require('./ui/welcome/welcome.story');
   loadStories()
 }, module);
 
@@ -27,11 +28,11 @@ class StorybookWrapper extends Component {
 setTimeout(
   () =>
     setOptions({
-      name: 'React Native UI',
+      name: 'React Universal UI',
     }),
   100
 );
 
-AppRegistry.registerComponent('reactnativeui', () => StorybookWrapper);
+AppRegistry.registerComponent('reactuniversalui', () => StorybookWrapper);
 
 export default StorybookUI;

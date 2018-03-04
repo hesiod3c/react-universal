@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
 import App from './storybook';
 
-AppRegistry.registerComponent('reactuniversal', () => App);
+AppRegistry.registerComponent('reactuniversalui', () => App);
