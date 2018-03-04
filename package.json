@@ -1,6 +1,6 @@
 {
   "name": "@descco/react-universal-ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "source/index.web.js",
   "react-native": "source/components",
   "scripts": {
