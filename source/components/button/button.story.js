@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '../../internals/storybook/helpers/index';
+import { storiesOf } from '../../../internals/storybook/helpers';
 import { action } from '@storybook/addon-actions';
 
 import { Text, View } from 'react-native';

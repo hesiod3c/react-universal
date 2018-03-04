@@ -1,5 +1,1 @@
-import { storiesOf } from '@storybook/react';
-
-export {
-  storiesOf,
-}
+export { storiesOf } from '@storybook/react';

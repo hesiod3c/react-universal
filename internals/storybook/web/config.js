@@ -28,7 +28,7 @@ setOptions({
 setAddon(infoAddon);
 
 function loadStories () {
-  const req = require.context('../../../source/', true, /\.story\.js$/);
+  const req = require.context('../../../source/components', true, /\.web.story\.js$/);
   req.keys().forEach((filename) => req(filename))
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import { storiesOf } from '../../internals/storybook/helpers/index.web';
+import { storiesOf } from '../../../internals/storybook/helpers';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import Button from './index.web';
-import '../../node_modules/@descco/ui-core/lib/css/06-components/button.css';
+import '../../../node_modules/@descco/ui-core/lib/css/06-components/button.css';
 
 const stories = storiesOf('Button', module);
 

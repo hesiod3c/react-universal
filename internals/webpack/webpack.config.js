@@ -18,7 +18,7 @@ module.exports = {
   resolve: {
     extensions: ['.web.js', '.js', '.scss']
   },
-  devtool: 'source-map',
+  devtool: 'eval',
   module: {
     rules: [
       {
@@ -30,7 +30,7 @@ module.exports = {
         }
       },
       {
-        test: /(.web)?.js$/,
+        test: /\.web.js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
