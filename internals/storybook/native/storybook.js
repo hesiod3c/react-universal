@@ -18,6 +18,12 @@ const StorybookUI = getStorybookUI({
   onDeviceUI: true,
 });
 
+class StorybookWrapper extends Component {
+  render() {
+    return StorybookUI();
+  }
+}
+
 setTimeout(
   () =>
     setOptions({
@@ -26,6 +32,6 @@ setTimeout(
   100
 );
 
-AppRegistry.registerComponent('reactnativeui', () => StorybookUI);
+AppRegistry.registerComponent('reactnativeui', () => StorybookWrapper);
 
 export default StorybookUI;

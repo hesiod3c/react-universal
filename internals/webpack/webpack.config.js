@@ -1,41 +1,24 @@
-const webpack = require('webpack');
-const yargs = require('yargs');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
-const options = yargs
-  .alias('p', 'optimize-minimize')
-  .alias('d', 'debug')
-  .option('port', {
-    default: '8080',
-    type: 'string'
-  })
-  .argv;
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const baseConfig = {
+module.exports = {
   entry: {
-    'ui-react': './source/index.web.js',
+    'ui-react': './source/components/index.js',
   },
-
   output: {
-    path: './dist',
-    filename: '[name].min.js'
+    path: path.resolve(__dirname, '../../dist'),
+    library: 'react-universal-ui',
+    libraryTarget: 'umd',
+    filename: '[name].web.min.js'
   },
-
-  externals: [
-    {
-      react: {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react',
-      }
-    }
-  ],
-
+  externals: {
+    react: 'react',
+  },
   resolve: {
-    extensions: ['.web.js', '.js', '.jsx', '.scss']
+    extensions: ['.web.js', '.js', '.scss']
   },
-
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -47,7 +30,7 @@ const baseConfig = {
         }
       },
       {
-        test: /\.web.js$/,
+        test: /(.web)?.js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
@@ -98,13 +81,7 @@ const baseConfig = {
       }
     ]
   },
-
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(options.optimizeMinimize ? 'production' : 'development')
-      }
-    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -118,9 +95,3 @@ const baseConfig = {
     })
   ]
 };
-
-if (options.optimizeMinimize) {
-  baseConfig.devtool = 'source-map';
-}
-
-module.exports =  baseConfig;

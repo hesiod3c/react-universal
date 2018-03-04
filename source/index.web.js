@@ -1,5 +1,1 @@
-import Button from './button/index.web';
-
-module.exports = {
-  Button,
-};
+module.exports = require('../dist/ui-react.web.min');

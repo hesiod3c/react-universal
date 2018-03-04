@@ -11,6 +11,8 @@ yarn
 
 ## Storybook
 
+Obs: Para o **hot reloading** ser útil no `react-native`, o componente deverá estar selecionado na navegação web (**localhost:9000**)
+
 ```
 yarn storybbok
 ```
