@@ -1,94 +1,52 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { View, ActivityIndicator, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import Touchable from '../touchable';
 
-const Button = ({ styleType, size, rounded, block, onPress, children, loading }) => {
-  const defaultStyle = styles.default(block, rounded, size);
-  const buttonStyle = loading ? styles.loading.button : styles[styleType].button;
+import { styles } from '@descco/ui-core';
 
-  return (
-    <Touchable onPress={onPress} style={defaultStyle.body} disabled={loading}>
-      <View style={Object.assign({}, defaultStyle.button, buttonStyle)}>
-        {loading
-          ? <ActivityIndicator color="#999" animating={true} size="large" style={defaultStyle.loadingContent} />
-          : <Text style={defaultStyle.text}>{children}</Text>}
-      </View>
-    </Touchable>
-  );
-};
+class Button extends PureComponent {
+  render() {
+    const { children, onClick, styleType, size } = this.props;
+
+    if (!children) {
+      return null;
+    }
+
+    const props = {
+      styleType,
+      size,
+    };
+
+    return (
+      <Touchable onPress={onClick}>
+        <View style={themeStyle(props).body}>
+          <Text style={themeStyle(props).text}>{children}</Text>
+        </View>
+      </Touchable>
+    );
+  }
+}
 
 Button.defaultProps = {
   styleType: 'primary',
-  size: 'normal',
-  block: true,
-  rounded: true,
+  size: 'md',
 };
 
 Button.propTypes = {
   styleType: PropTypes.string,
-  size: PropTypes.oneOf(['normal', 'large']),
-  block: PropTypes.bool,
-  rounded: PropTypes.bool,
+  size: PropTypes.string,
 };
 
-const styles = {
-  default: (block, rounded, size) => {
-    return {
-      body: {
-        alignSelf: 'center',
-        /* start ios */
-        shadowOffset: {
-          width: 0,
-          height: 2,
-        },
-        shadowColor: '#ccc',
-        shadowRadius: 1,
-        shadowOpacity: 1,
-        borderRadius: rounded ? 5 : 0,
-        /* end ios */
-        maxWidth: size === 'large' ? 250 : '100%',
-      },
-      button: {
-        margin: 0,
-        borderRadius: rounded ? 5 : 0,
-        alignSelf: 'center',
-        flexDirection: 'row',
-        overflow: 'hidden',
-        /* start android */
-        elevation: 3,
-        /* end android */
-        maxWidth: size === 'large' ? 250 : '100%',
-      },
-      text: {
-        flex: block ? 1 : 0,
-        color: '#fff',
-        textAlign: 'center',
-        padding: 10,
-        marginBottom: 0,
-        fontSize: 24,
-      },
-      loadingContent: {
-        flex: block ? 1 : 0,
-        padding: 10,
-      },
-    };
+const themeStyle = props => ({
+  body: {
+    ...styles.button.body.style[props.styleType],
+    ...styles.button.body.size[props.size],
   },
-  loading: {
-    button: {
-      backgroundColor: '#ccc',
-    },
+  text: {
+    ...styles.button.text.style[props.styleType],
+    ...styles.button.text.size[props.size],
   },
-  primary: {
-    button: {
-      backgroundColor: '#40cd28',
-    },
-  },
-  secondary: {
-    button: {
-      backgroundColor: '#33bdf2',
-    },
-  },
-};
+});
 
 export default Button;
