@@ -1,12 +1,12 @@
 # React Universal UI
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues/org-hesiod/react-universal.svg)](https://github.com/org-hesiod/react-universal/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/org-hesiod/react-universal.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/org-hesiod/react-universal.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/org-hesiod/react-universal.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/org-hesiod/react-universal.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/org-hesiod/react-universal/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/hesiod3c/react-universal.svg)](https://github.com/hesiod3c/react-universal/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/hesiod3c/react-universal.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/hesiod3c/react-universal.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/hesiod3c/react-universal.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/hesiod3c/react-universal.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/hesiod3c/react-universal/total.svg)
 
 ## Install
 
@@ -51,7 +51,7 @@ yarn test
 
 ## Log
 
-Check [Releases](https://github.com/org-hesiod/react-universal/releases) for detailed changelog.
+Check [Releases](https://github.com/hesiod3c/react-universal/releases) for detailed changelog.
 
 ## License
 
